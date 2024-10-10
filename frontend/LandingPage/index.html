@@ -5,40 +5,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> 
+  
   <link rel="stylesheet" href="styles.css" />
   <title>CrowdUMKM - Dukung Indonesia Maju</title>
 </head>
 
 <body>
-  <nav>
-    <div class="nav__header">
-      <div class="nav__logo">
-        <a href="index.html" class="logo">CrowdUMKM</a>
+
+  <!-- NAVBAR -->
+  <nav class="navbar fixed-top bg-primary data-bs-theme= dark">
+      <div class="nav__header ">
+        <div class="nav__logo">
+          <a href="index.html" class="logo">CrowdUMKM</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
       </div>
-      <div class="nav__menu__btn" id="menu-btn">
-        <span><i class="ri-menu-line"></i></span>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#Beranda">Beranda</a></li>
+        <li><a href="#Layanan_kami">Layanan Kami</a></li>
+        <li><a href="#Tentang_kami">Tentang Kami</a></li>
+        <li><a href="#Kontak_kami">Kontak Kami</a></li>
+        <li><a href="#Cara_kerja">Cara Kerja</a></li>
+        <li><a href="#Project">Project</a></li>
+      </ul>
+      <div class="nav__btns">
+        <a href="../rregister/register.html">
+          <button class="btn_SignUp">Sign Up</button>
+        </a>
       </div>
-    </div>
-    <ul class="nav__links" id="nav-links">
-      <li><a href="#Beranda">Beranda</a></li>
-      <li><a href="#Layanan_kami">Layanan Kami</a></li>
-      <li><a href="#Tentang_kami">Tentang Kami</a></li>
-      <li><a href="#Kontak_kami">Kontak Kami</a></li>
-      <li><a href="#Cara_kerja">Cara Kerja</a></li>
-      <li><a href="#Project">Project</a></li>
-    </ul>
-    <div class="nav__btns">
-      <a href="../rregister/register.html">
-        <button class="btn_SignUp">Sign Up</button>
-      </a>
-    </div>
-    <div class="nav__btns">
-      <a href="../Login/login.html">
-        <button class="btn_Login">Login</button>
-      </a>
-    </div>
+      <div class="nav__btns">
+        <a href="../Login/login.html">
+          <button class="btn_Login">Login</button>
+        </a>
+      </div>
   </nav>
+
+
   <header class="header" id="Beranda">
     <div class="section__container header__container">
       <div class="header__image">

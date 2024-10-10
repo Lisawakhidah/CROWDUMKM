@@ -19,6 +19,25 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.nav__btns {
+  padding-left: 100px;
+  max-width: fit-content;
+  margin-left: 20px;
+  /* margin-inline: auto; */
+  margin-block: 1rem 2rem;
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+
 .container {
   min-height: 100vh;
   padding-inline: 1rem;

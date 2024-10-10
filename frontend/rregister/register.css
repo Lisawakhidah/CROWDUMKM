@@ -19,12 +19,51 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  min-height: 100vh;
-  padding-inline: 1rem;
-  display: grid;
-  overflow: hidden;
+
+.nav__btns {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  margin-left: 20px;
+  margin-block: 1rem 2rem;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: fit-content;
+  position: absolute; /* Gunakan position absolute */
+  top: 2px; /* Mengatur jarak dari atas */
+  left: 2px; /* Mengatur jarak dari kiri */
 }
+
+.nav__btns a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav__btns:hover {
+  background-color: #2851A3;
+}
+
+
+
+.container {
+  height: 100vh;
+  padding-inline: 1rem;
+  display: flex;
+  overflow: hidden;
+  display: flex; /* Mengatur layout secara horizontal (jika butuh baris) */
+  justify-content: center; /*Pusatkan elemen secara horizontal*/
+  align-items: center; /*Pusatkan elemen secara vertikal (jika diperlukan)*/
+  flex-direction: row; 
+  padding: 0 10vw;
+}
+
 
 .container__content {
   width: 100%;
@@ -55,7 +94,7 @@ body {
 
 .container__content form {
   display: grid;
-  gap: 5px;
+  gap: 1 rem;
 }
 
 .input__header {
