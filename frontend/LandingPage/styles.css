@@ -780,11 +780,12 @@ nav {
     justify-content: flex-start;
   }
 
-  /* .footer__links {
+  .footer__links {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-  } */
+  }
+  
   .footer {
     background-color: rgb(73, 98, 77); /* Warna biru gelap */
     padding: 40px 3px;
@@ -874,11 +875,6 @@ nav {
     .music__btns {
         justify-content: flex-start;
     }
-    .footer__links {
-        display: flex;
-        align-items: center;
-        
-    }
 }
 
 @media (width>1024px) {
@@ -886,3 +882,20 @@ nav {
         gap: 2rem;
     }
 }
+
+.footer {
+ width: 100%; 
+ height: 100%; 
+ position: relative; 
+ background: #00008B"
+}
+
+.footerbiasa{
+  display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
