@@ -158,7 +158,7 @@ body {
     margin-top: 200px;
 }
 
-<<<<<<< HEAD
+
 .btn-primary, .btn-secondary {
   background-color: rgb(73, 98, 77);
   color: var(--white);
@@ -176,7 +176,7 @@ body {
 
 .btn-secondary:hover {
   background-color: rgb(238, 255, 0);
-=======
+}
 .btn-primary,
 .btn-secondary {
     background-color: rgb(73, 98, 77);
@@ -195,7 +195,6 @@ body {
 
 .btn-secondary:hover {
     background-color: var(--primary-color-dark);
->>>>>>> 62272f6f2d58a0c0433a195fefa0ac22f8388994
 }
 
 @media (max-width: 768px) {
@@ -684,7 +683,7 @@ nav {
     }
 }
 
-<<<<<<< HEAD
+
 @media (width > 768px) {
   nav {
     position: fixed;
@@ -795,7 +794,7 @@ nav {
   .genre__grid {
     gap: 2rem;
   }
-=======
+}
 @media (width>768px) {
     nav {
         position: static;
@@ -882,5 +881,4 @@ nav {
     .genre__grid {
         gap: 2rem;
     }
->>>>>>> 62272f6f2d58a0c0433a195fefa0ac22f8388994
 }
