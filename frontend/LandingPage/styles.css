@@ -644,6 +644,7 @@ nav {
     grid-area: 1/1/2/4;
 }
 
+
 .footer__links li:not(.footer__logo) a {
     color: var(--text-light);
 }
@@ -762,9 +763,28 @@ nav {
 .footerbiasa{
   display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+.footer__links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer__links li {
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  
+  .footer__links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer__links a:hover {
+    color: #85B6FF;
+  }
