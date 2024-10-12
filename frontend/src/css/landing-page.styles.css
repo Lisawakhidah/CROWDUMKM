@@ -204,22 +204,15 @@ body {
     }
 }
 
-nav {
-    position: fixed;
-    isolation: isolate;
-    width: 100%;
-    max-width: var(--max-width);
-    margin-inline: auto;
-    z-index: 0;
-}
 
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     background-color: var(--primary-color-dark);
     color: white;
     z-index: 1000;
-    padding: 10px 0;
 }
 
 .nav__header {
@@ -229,6 +222,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-image: var(--gradient-1);
+    max-width: var(--max-width);
 }
 
 .nav__menu__btn {
@@ -498,16 +492,48 @@ nav {
     width: 100%;
 }
 
+.swiper-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* Default 2 kolom */
+    gap: 1rem;
+    align-items: stretch;
+}
+
+/* Mengatur agar card mengisi ruang kolom sepenuhnya */
 .swiper-slide {
-    max-width: 400px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: stretch;
 }
 
 .client__card {
     padding: 1.5rem;
-    max-width: 400px;
+    max-width: 100%;
+    width: 100%;
     background-image: var(--gradient-1);
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/* Media query untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+    .swiper-wrapper {
+        grid-template-columns: 1fr; /* 1 kolom pada layar kecil */
+    }
+}
+
+/* Media query untuk layar yang sangat besar */
+@media (min-width: 1200px) {
+    .swiper-wrapper {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom pada layar besar */
+    }
+}
+
+
 
 .client__ratings1 {
     margin-bottom: 1rem;
@@ -652,31 +678,29 @@ nav {
 }
 
 .footer__links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem 1rem;
-    text-align: center;
-}
-
-.footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .footer__logo {
     grid-area: 1/1/2/4;
-}
-
-
-.footer__links li:not(.footer__logo) a {
+  }
+  
+  .footer__links li:not(.footer__logo) a {
     color: var(--text-light);
-}
-
-.footer__links li:not(.footer__logo) a:hover {
+  }
+  
+  .footer__links li:not(.footer__logo) a:hover {
     color: var(--secondary-color);
-}
-
-.footer__bar {
+  }
+  
+  .footer__bar {
     padding: 1rem;
     font-size: 0.9rem;
     color: var(--text-light);
     text-align: center;
-}
+  }
 
 @media (width>540px) {
     .header__container h1 {
