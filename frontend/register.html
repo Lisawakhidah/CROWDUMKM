@@ -7,12 +7,12 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/css/login.styles.css" />
+    <link rel="stylesheet" href="src/css/register.styles.css" />
     <title>Register - CrowdUMKM</title>
   </head>
   <body>
     <div class="nav__btns">
-      <a href="./index.html">Kembali</a>
+      <a href="./index.html" class="a-nostyle">Kembali</a>
     </div>
     <div class="container">
       <div class="container__content">
@@ -20,6 +20,43 @@
         <h3>Join us today!</h3>
         <h1>Sign Up</h1>
         <form action="/">
+          <!-- Input Nama Lengkap -->
+          <label for="fullname">Nama Lengkap</label>
+          <div class="input__row">
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Masukkan Nama Lengkap Anda"
+              required
+            />
+          </div>
+
+          <!-- Input Nama Bisnis -->
+          <label for="businessName">Nama Bisnis</label>
+          <div class="input__row">
+            <input
+              type="text"
+              id="businessName"
+              name="businessName"
+              placeholder="Masukkan Nama Bisnis Anda"
+              required
+            />
+          </div>
+
+          <!-- Input Nomor Telepon -->
+          <label for="phoneNumber">Nomor Telepon</label>
+          <div class="input__row">
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="Masukkan Nomor Telepon"
+              pattern="[0-9]{10,13}" 
+              required
+            />
+          </div>
+
           <!-- Input Email -->
           <label for="email">Email</label>
           <div class="input__row">
