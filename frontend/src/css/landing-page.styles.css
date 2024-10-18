@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
-    --primary-color: #2659ff;
-    --primary-color-dark: #0059ff;
+    --primary-color: #00008B;
+    --primary-color-dark: #1E3A8A;
     --secondary-color: #a9fb50;
     --text-dark: #333333;
     --text-light: #ffffff;
     --white: #ffffff;
     --max-width: 1200px;
-    --gradient-1: linear-gradient(to bottom, var(--primary-color), #7c818a);
-    --gradient-2: linear-gradient(to bottom, #8d8d8d, #302d29);
+    --gradient-1: linear-gradient(to bottom, var(--primary-color), #3B82F6);
+    --gradient-2: linear-gradient(to bottom, #8d8d8d, #00008B);
 }
 
 * {
@@ -27,7 +27,7 @@
     margin-bottom: 1rem;
     font-size: 2.5rem;
     font-weight: 400;
-    color: black;
+    color: white;
     line-height: 3rem;
     text-align: center;
 }
@@ -36,18 +36,18 @@
     margin-bottom: 1rem;
     font-size: 2.5rem;
     font-weight: 400;
-    color: black;
+    color: #00008B;
     line-height: 3rem;
     text-align: center;
 }
 
 .section__description {
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
 }
 
 .section__description__black {
-    color: black;
+    color: #00008B;
     text-align: center;
 }
 
@@ -93,10 +93,12 @@
 .nav__logo {
     align-items: center;
     display: flex;
+    
   }
   
   .logo-img {
-    width: 50px; /* Atur ukuran logo sesuai kebutuhan */
+    width: 70px; /* Atur ukuran logo sesuai kebutuhan */
+    height: 50px;
   }
   
   .logo-text {
@@ -132,7 +134,7 @@ body {
 
 .benefits-section h1 {
     text-align: center;
-    color: black;
+    color: #00008B;
     margin-top: 50px;
     font-size: 28px;
 }
@@ -192,7 +194,7 @@ body {
 
 
 .btn-primary, .btn-secondary {
-  background-color: rgb(73, 98, 77);
+  background-color: #ffcc00;
   color: var(--white);
   border: none;
   padding: 10px 20px;
@@ -211,7 +213,7 @@ body {
 }
 .btn-primary,
 .btn-secondary {
-    background-color: rgb(73, 98, 77);
+    background-color: #ffcc00;
     color: var(--white);
     border: none;
     padding: 10px 20px;
@@ -310,7 +312,7 @@ body {
     display: grid;
     gap: 0 2rem;
     overflow: hidden;
-    color: black;
+    color: white;
 }
 
 .header__image img {
@@ -325,6 +327,7 @@ body {
     line-height: 4.5rem;
     color: rgb(255, 255, 255);
     text-align: center;
+    margin-top: 30px;
 }
 
 .header__content .section__description {
@@ -363,7 +366,7 @@ body {
 }
 
 .color-black {
-    color: black;
+    color: white;
 }
 
 .header__btns a:hover {
@@ -458,7 +461,7 @@ body {
 .genre__card h4 {
     font-size: 1.5rem;
     font-weight: 500;
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -856,7 +859,7 @@ body {
   }
   
   .footer {
-    background-color: rgb(73, 98, 77); /* Warna biru gelap */
+    background-color: 00008B; /* Warna biru gelap */
     padding: 40px 3px;
     color: white;
   }
@@ -951,6 +954,45 @@ body {
         gap: 2rem;
     }
 }
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+    background-color: #00008B;
+}
+.contact-info, .contact-form {
+    width: 45%;
+    
+}
+.contact-form {
+    background-color: #3399ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+h2, p, h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    background-color: #ffcc00;
+    color: #0066cc;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 .footer {
  width: 100%; 
