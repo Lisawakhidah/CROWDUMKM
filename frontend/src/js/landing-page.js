@@ -3,12 +3,12 @@ const navLinks = document.getElementById("nav-links");
 // const menuBtnIcon = menuBtn.querySelector("i");
 // const formContact =  document.getElementById('contactForm')
 
-// contactForm.addEventListener('submit', function (e) {
-//   e.preventDefault();
-//   // Here you would typically send the form data to a server
-//   alert('Pesan Anda telah terkirim. Terima kasih!');
-//   this.reset();
-// });
+contactForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  // Here you would typically send the form data to a server
+  alert('Pesan Anda telah terkirim. Terima kasih!');
+  this.reset();
+});
 
 menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
