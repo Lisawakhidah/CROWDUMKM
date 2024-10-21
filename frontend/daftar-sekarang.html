@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/register.styles.css" />
+    <title>Register - CrowdUMKM</title>
+  </head>
+  <body>
+    <div class="nav__btns">
+      <a href="landing-page-tailwind.html" class="a-nostyle">Kembali</a>
+    </div>
+    <div class="container">
+      <div class="container__content">
+        <h2>CrowdUMKM</h2>
+        <h3>Join us today!</h3>
+        <h1>Sign Up</h1>
+        <form action="/">
+          <!-- Input Nama Lengkap -->
+          <label for="fullname">Nama Lengkap</label>
+          <div class="input__row">
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Masukkan Nama Lengkap Anda"
+              required
+            />
+          </div>
+
+          <!-- Input Nama Bisnis -->
+          <label for="businessName">Nama Bisnis</label>
+          <div class="input__row">
+            <input
+              type="text"
+              id="businessName"
+              name="businessName"
+              placeholder="Masukkan Nama Bisnis Anda"
+              required
+            />
+          </div>
+
+          <!-- Input Nomor Telepon -->
+          <label for="phoneNumber">Nomor Telepon</label>
+          <div class="input__row">
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="Masukkan Nomor Telepon"
+              pattern="[0-9]{10,13}" 
+              required
+            />
+          </div>
+
+          <!-- Input Email -->
+          <label for="email">Email</label>
+          <div class="input__row">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+
+          <!-- Input Password -->
+          <div class="input__header">
+            <label for="password">Password</label>
+          </div>
+          <div class="input__row">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <span id="password-eye"><i class="ri-eye-off-line"></i></span>
+          </div>
+
+          <!-- Input Confirm Password -->
+          <div class="input__header">
+            <label for="confirmPassword">Confirm Password</label>
+          </div>
+          <div class="input__row">
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+
+          <!-- Sign Up Button -->
+          <button>SIGN UP</button>
+        </form>
+
+        <!-- Social Login Options -->
+        <h6>or continue with</h6>
+        <div class="logins">
+          <a href="#"><img src="src/assets/google.png" alt="Google" /></a>
+          <a href="#"><img src="src/assets/github.png" alt="GitHub" /></a>
+          <a href="#"><img src="src/assets/facebook.png" alt="Facebook" /></a>
+        </div>
+
+        <!-- Redirect to Login -->
+        <p>Already have an account? <a href="./login.html">Log in</a></p>
+      </div>
+
+      <div class="container__image">
+        <img src="src/assets/header-auth.png" alt="header" />
+      </div>
+    </div>
+
+    <script src="src/js/register.js"></script>
+  </body>
+</html>
