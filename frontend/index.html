@@ -12,6 +12,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="src/css/landing-page.styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>CrowdUMKM - Dukung Indonesia Maju</title>
   </head>
 
@@ -48,6 +50,43 @@
       </a>
     </div>
   </nav>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar bg-primary data-bs-theme= dark">
+      <div class="nav__header">
+        <a href="index.html">
+          <div class="nav__logo">
+            <img
+              src="src/assets/logo-umkm.png"
+              alt="CrowdUMKM Logo"
+              class="logo-img"
+            />
+            <span class="logo-text">CrowdUMKM</span>
+          </div>
+        </a>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#Beranda" class="active">Beranda</a></li>
+        <li><a href="#Layanan_kami">Layanan Kami</a></li>
+        <li><a href="#Tentang_kami">Tentang Kami</a></li>
+        <li><a href="#Kontak_kami">Kontak Kami</a></li>
+        <li><a href="#Cara_kerja">Cara Kerja</a></li>
+        <li><a href="#Project">Project</a></li>
+      </ul>
+      <div class="nav__btns">
+        <a href="./register.html">
+          <button class="btn_SignUp">Sign Up</button>
+        </a>
+      </div>
+      <div class="nav__btns">
+        <a href="./login.html">
+          <button class="btn_Login">Login</button>
+        </a>
+      </div>
+    </nav>
 
     <header class="header bg-blue" id="Beranda">
       <div class="section__container header__container">
@@ -68,7 +107,7 @@
               Get Started
               <span><i class="ri-arrow-right-line"></i></span>
             </button>
-            <a href="#" >
+            <a href="#">
               See More
               <span><i class="ri-arrow-right-line"></i></span>
             </a>
@@ -85,52 +124,52 @@
       </div>
     </header>
 
-   <div class="bg-white">
-    <section class="section__container genre__container bg-white">
-      <h2 class="section__header">Projects UMKM</h2>
-      <p class="section__description">
-        Terjunlah, dan dukung UMKM Indonesia agar lebih maju.
-      </p>
-      <div class="genre__grid">
-        <div class="genre__card">
-          <div class="genre__image">
-            <img src="src/assets/umkm1.jpg" alt="genre" />
-            <div class="genre__link">
-              <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+    <div class="bg-white">
+      <section class="section__container genre__container bg-white">
+        <h2 class="section__header">Projects UMKM</h2>
+        <p class="section__description">
+          Terjunlah, dan dukung UMKM Indonesia agar lebih maju.
+        </p>
+        <div class="genre__grid">
+          <div class="genre__card">
+            <div class="genre__image">
+              <img src="src/assets/umkm1.jpg" alt="genre" />
+              <div class="genre__link">
+                <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+              </div>
             </div>
+            <h4>Kerajinan Tangan</h4>
           </div>
-          <h4>Kerajinan Tangan</h4>
-        </div>
-        <div class="genre__card">
-          <div class="genre__image">
-            <img src="src/assets/umkm2.jpg" alt="genre" />
-            <div class="genre__link">
-              <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+          <div class="genre__card">
+            <div class="genre__image">
+              <img src="src/assets/umkm2.jpg" alt="genre" />
+              <div class="genre__link">
+                <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+              </div>
             </div>
+            <h4>Kuliner Tradisional</h4>
           </div>
-          <h4>Kuliner Tradisional</h4>
-        </div>
-        <div class="genre__card">
-          <div class="genre__image">
-            <img src="src/assets/umkm3.jpg" alt="genre" />
-            <div class="genre__link">
-              <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+          <div class="genre__card">
+            <div class="genre__image">
+              <img src="src/assets/umkm3.jpg" alt="genre" />
+              <div class="genre__link">
+                <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+              </div>
             </div>
+            <h4>Thrift Shop</h4>
           </div>
-          <h4>Thrift Shop</h4>
-        </div>
-        <div class="genre__card">
-          <div class="genre__image">
-            <img src="src/assets/umkm4.jpg" alt="genre" />
-            <div class="genre__link">
-              <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+          <div class="genre__card">
+            <div class="genre__image">
+              <img src="src/assets/umkm4.jpg" alt="genre" />
+              <div class="genre__link">
+                <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+              </div>
             </div>
+            <h4>Krajinan Batik</h4>
           </div>
-          <h4>Krajinan Batik</h4>
         </div>
-      </div>
-    </section>
-   </div>
+      </section>
+    </div>
 
     <!-- <section class="section__container banner__container">
     <h2>
@@ -369,92 +408,10 @@
                 membantu umkm lokal lewat pendanaan yang saya berikan terhadap
                 platform ini.
               </p>
-              <!-- <div class="client__details">
-                <img src="src/assets/client-4.jpg" alt="client" />
-                <div>
-                  <h4>Raka Santosa</h4>
-                  <h5>Konten kreator</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="client__card">
-              <div class="client__ratings4">
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-              </div>
-              <p>
-                Sebagai seorang konten kreator, memajukan ekonomi indonesia
-                lewat dukungan umkm lokal agar lebih berkembang pesat, saya
-                sangat setuju adanya projek ini, saya dengan suka rela mau
-                membantu umkm lokal lewat pendanaan yang saya berikan terhadap
-                platform ini.
-              </p>
-              <div class="client__details">
-                <img src="src/assets/client-4.jpg" alt="client" />
-                <div>
-                  <h4>Raka Santosa</h4>
-                  <h5>Konten kreator</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="client__card">
-              <div class="client__ratings4">
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-              </div>
-              <p>
-                Sebagai seorang konten kreator, memajukan ekonomi indonesia
-                lewat dukungan umkm lokal agar lebih berkembang pesat, saya
-                sangat setuju adanya projek ini, saya dengan suka rela mau
-                membantu umkm lokal lewat pendanaan yang saya berikan terhadap
-                platform ini.
-              </p>
-              <div class="client__details">
-                <img src="src/assets/client-4.jpg" alt="client" />
-                <div>
-                  <h4>Raka Santosa</h4>
-                  <h5>Konten kreator</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="client__card">
-              <div class="client__ratings4">
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-              </div>
-              <p>
-                Sebagai seorang konten kreator, memajukan ekonomi indonesia
-                lewat dukungan umkm lokal agar lebih berkembang pesat, saya
-                sangat setuju adanya projek ini, saya dengan suka rela mau
-                membantu umkm lokal lewat pendanaan yang saya berikan terhadap
-                platform ini.
-              </p>
-              <div class="client__details">
-                <img src="src/assets/client-4.jpg" alt="client" />
-                <div>
-                  <h4>Raka Santosa</h4>
-                  <h5>Konten kreator</h5>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </section>
 
     <section class="section__container umkm__container">
@@ -482,44 +439,86 @@
       </div>
     </section>
 
-    <!-- <footer class="footer">
-    <div class="section__container footer__container">
-      <ul class="footer__links">
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#Layanan_Kami">Layanan Kami</a></li>
-        <li class="footer__logo">
-          <a href="#Beranda" class="logo">CrowdUMKM</a>
-        </li>
-        <li><a href="#">Kontak Kami</a></li>
-        <li><a href="#">Cara Kerja</a></li>
-        <li><a href="#">Project</a></li>
-      </ul>
-    </div>
-      <div class="footer__bar">
-        Copyright © 2024 Web Design Mastery. All rights reserved.
-      </div> 
-  </footer> -->
+    <!-- Hubungi kami -->
+    <section
+      class="w-full min-h-screen bg--900 flex items-center justify-center flex-col"
+    >
+      <div class="mx-auto max-w-screen-xl flex items-center justify-center">
+        <div class="w-1/2 text-white">
+          <p class="text-xl font-bold mb-2">Kontak Kami :</p>
+          <p>
+            Kami siap membantu Anda untuk segala pertanyaan terkait pendanaan
+            atau pinjaman di CROWDUMKM. Jangan ragu untuk menghubungi kami
+            melalui:
+          </p>
+          <p class="text-xl font-bold mt-4 mb-2">CROWDUMKM</p>
+          <div class="space-y-2">
+            <p>
+              Alamat : Jl. Raya No. 123, Kecamatan UMKM, Kota Inovasi , 12345
+            </p>
+            <p>No. Handphone : +62897563453697</p>
+            <p>Email: support@crowdumkm.id</p>
+          </div>
+        </div>
+        <div class="w-1/2 text-white">
+          <div class="w-full rounded-xl bg-blue-600 p-7">
+            <p class="text-xl font-bold mb-2 text-center">Hubungi Kami</p>
+            <div class="my-4">
+              <p>Nama :</p>
+              <input
+                class="px-4 bg-blue-400 rounded-md outline-none w-full mt-4"
+                type="text"
+              />
+            </div>
+            <div class="my-4">
+              <p>No. Handphone :</p>
+              <input
+                class="px-4 bg-blue-400 rounded-md outline-none w-full mt-4"
+                type="text"
+              />
+            </div>
+            <div class="my-4">
+              <p>Email :</p>
+              <input
+                class="px-4 bg-blue-400 rounded-md outline-none w-full mt-4"
+                type="text"
+              />
+            </div>
+            <div class="my-4">
+              <p>Pesan :</p>
+              <textarea
+                class="px-4 bg-blue-400 rounded-md outline-none w-full mt-4"
+                type="text"
+              >
+              </textarea>
+            </div>
+            <button class="bg-yellow-500 px-4 py-2 rounded-full mx-auto">
+              Kirim Pesan
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hubungi kMI -->
 
-    
-  <footer class="footer">
-    <div class="section__container footer__container">
-      <ul class="footer__links">
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#Layanan_Kami">Layanan Kami</a></li>
-        <li class="footer__logo">
-          <a href="#Beranda" class="logo">CrowdUMKM</a>
-        </li>
-        <li><a href="#">Kontak Kami</a></li>
-        <li><a href="#">Cara Kerja</a></li>
-        <li><a href="#">Project</a></li>
-      </ul>
-    </div>
-    <div class="footer__bar">
-      Copyright © 2024 Kelompok 10. All rights reserved.
-    </div>
-  </footer>
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <ul class="footer__links">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#Layanan_Kami">Layanan Kami</a></li>
+          <li class="footer__logo">
+            <a href="#Beranda" class="logo">CrowdUMKM</a>
+          </li>
+          <li><a href="#">Kontak Kami</a></li>
+          <li><a href="#">Cara Kerja</a></li>
+          <li><a href="#">Project</a></li>
+        </ul>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Kelompok 10.
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
