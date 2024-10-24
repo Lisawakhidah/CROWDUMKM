@@ -62,10 +62,10 @@
               dan transparan.
             </p>
           </div>
-          <div class="w-1/2">
+          <div class="w-full">
             <img
-              src="src/assets/header3.jpg"
-              class="w-2/3 rounded-full mx-auto"
+              src="src/assets/feature3.jpg"
+              class="w-2/3 rounded-2xl mx-auto size-full"
               alt=""
             />
           </div>
@@ -122,6 +122,147 @@
       </section>
       <!-- End Visi Misi -->
 
+      <!-- Tim Kami -->
+      <section class="w-full min-h-screen bg-white py-10 relative">
+        <div class="max-w-screen-xl mx-auto relative">
+          <h2 class="text-4xl text-center font-bold mb-10">Tim Kami</h2>
+
+          <!-- Wrapper untuk Konten Tim -->
+          <div class="relative shadow-lg px-12">
+            <!-- Tambahkan padding horizontal untuk memberi ruang -->
+            <!-- Daftar Tim (Wrapper Scrollable) -->
+            <div
+              id="teamContainer"
+              class="flex overflow-x-hidden space-x-8 pb-4"
+            >
+              <!-- Anggota Tim 1 -->
+              <div
+                class="text-center bg-white shadow-lg rounded-lg p-6 min-w-[200px]"
+              >
+                <img
+                  src="src/assets/client-1.jpg"
+                  alt="Yuda Aerbani"
+                  class="w-40 h-40 rounded-full mx-auto object-cover"
+                />
+                <h3 class="text-2xl font-bold mt-4">Yuda Aerbani</h3>
+                <p class="text-gray-500">CEO</p>
+              </div>
+              <div
+                class="text-center bg-white shadow-lg rounded-lg p-6 min-w-[200px]"
+              >
+                <img
+                  src="src/assets/client-1.jpg"
+                  alt="Yuda Aerbani"
+                  class="w-40 h-40 rounded-full mx-auto object-cover"
+                />
+                <h3 class="text-2xl font-bold mt-4">Yuda Aerbani</h3>
+                <p class="text-gray-500">CEO</p>
+              </div>
+              <div
+                class="text-center bg-white shadow-lg rounded-lg p-6 min-w-[200px]"
+              >
+                <img
+                  src="src/assets/client-1.jpg"
+                  alt="Yuda Aerbani"
+                  class="w-40 h-40 rounded-full mx-auto object-cover"
+                />
+                <h3 class="text-2xl font-bold mt-4">Yuda Aerbani</h3>
+                <p class="text-gray-500">CEO</p>
+              </div>
+              <div
+                class="text-center bg-white shadow-lg rounded-lg p-6 min-w-[200px]"
+              >
+                <img
+                  src="src/assets/client-1.jpg"
+                  alt="Yuda Aerbani"
+                  class="w-40 h-40 rounded-full mx-auto object-cover"
+                />
+                <h3 class="text-2xl font-bold mt-4">Yuda Aerbani</h3>
+                <p class="text-gray-500">CEO</p>
+              </div>
+              <div
+                class="text-center bg-white shadow-lg rounded-lg p-6 min-w-[200px]"
+              >
+                <img
+                  src="src/assets/client-1.jpg"
+                  alt="Yuda Aerbani"
+                  class="w-40 h-40 rounded-full mx-auto object-cover"
+                />
+                <h3 class="text-2xl font-bold mt-4">Yuda Aerbani</h3>
+                <p class="text-gray-500">CEO</p>
+              </div>
+              <div
+                class="text-center bg-white shadow-lg rounded-lg p-6 min-w-[200px]"
+              >
+                <img
+                  src="src/assets/client-1.jpg"
+                  alt="Yuda Aerbani"
+                  class="w-40 h-40 rounded-full mx-auto object-cover"
+                />
+                <h3 class="text-2xl font-bold mt-4">Yuda Aerbani</h3>
+                <p class="text-gray-500">CEO</p>
+              </div>
+              <div
+                class="text-center bg-white shadow-lg rounded-lg p-6 min-w-[200px]"
+              >
+                <img
+                  src="src/assets/client-1.jpg"
+                  alt="Yuda Aerbani"
+                  class="w-40 h-40 rounded-full mx-auto object-cover"
+                />
+                <h3 class="text-2xl font-bold mt-4">Yuda Aerbani</h3>
+                <p class="text-gray-500">CEO</p>
+              </div>
+              <!-- Anggota Tim Lainnya -->
+              <!-- ... isi anggota tim lainnya sama seperti sebelumnya ... -->
+            </div>
+          </div>
+
+          <!-- Tombol Panah Kiri (Diluar Box) -->
+          <button
+            id="leftArrow"
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-3 rounded-full shadow-lg -ml-12"
+          >
+            &#10094;
+          </button>
+
+          <!-- Tombol Panah Kanan (Diluar Box) -->
+          <button
+            id="rightArrow"
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-3 rounded-full shadow-lg -mr-12"
+          >
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <!-- JavaScript untuk Menggeser Konten -->
+      <script>
+        const teamContainer = document.getElementById("teamContainer");
+        const leftArrow = document.getElementById("leftArrow");
+        const rightArrow = document.getElementById("rightArrow");
+
+        // Jumlah pixel untuk digeser setiap kali tombol diklik
+        const scrollAmount = 300;
+
+        // Klik tombol panah kanan
+        rightArrow.addEventListener("click", () => {
+          teamContainer.scrollBy({
+            left: scrollAmount,
+            behavior: "smooth",
+          });
+        });
+
+        // Klik tombol panah kiri
+        leftArrow.addEventListener("click", () => {
+          teamContainer.scrollBy({
+            left: -scrollAmount,
+            behavior: "smooth",
+          });
+        });
+      </script>
+      <!-- End Tim Kami -->
+
       <!-- Kelebihan kami -->
       <section class="w-full min-h-screen">
         <div
@@ -174,6 +315,181 @@
         </div>
       </section>
       <!-- End Kelebihan Kami -->
+
+      <!-- Kata Mereka Section -->
+      <section class="w-full min-h-screen relative">
+        <h1 class="text-4xl text-blue-900 font-bold text-center my-8">
+          Apa Kata Mereka Tentang CROWDUMKM?
+        </h1>
+        <p class="text-center">
+          Lihat bagaimana pendana dan UMKM merasakan manfaat dari platform kami.
+        </p>
+
+        <!-- Wrapper untuk Tombol Panah dan Konten -->
+        <div class="relative max-w-screen-xl mx-auto mt-8">
+          <!-- Daftar Testimoni (Wrapper Scrollable) -->
+          <div
+            id="testimonialsContainer"
+            class="flex overflow-x-hidden space-x-8"
+          >
+            <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
+              <div class="flex gap-4 mb-6 items-center">
+                <img
+                  class="object-cover rounded-full w-12 h-12"
+                  src="src/assets/kopi.jpg"
+                  alt="UMKM Kopi Nusantara"
+                />
+                <p class="text-blue-900 font-bold text-xl">
+                  UMKM Kopi Nusantara
+                </p>
+              </div>
+              <p class="mt-12 pb-24">
+                Saya Senang Bisa Meminjam DI CrowdUMKM untuk proses minjamnya
+                cepat dan efisien
+              </p>
+            </div>
+            <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
+              <div class="flex gap-4 mb-6 items-center">
+                <img
+                  class="object-cover rounded-full w-12 h-12"
+                  src="src/assets/client-4.jpg"
+                  alt="David Putra"
+                />
+                <p class="text-blue-900 font-bold text-xl">David Putra</p>
+              </div>
+              <p class="mt-12 pb-24">
+                Saya merasa sangat puas berinvestasi di CROWDUMKM. Prosesnya
+                sangat mudah dan transparan. Imbal hasil yang saya dapatkan
+                stabil setiap bulannya. Sangat cocok untuk yang ingin passive
+                income dengan risiko yang terukur.
+              </p>
+            </div>
+            <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
+              <div class="flex gap-4 mb-6 items-center">
+                <img
+                  class="object-cover rounded-full w-12 h-12"
+                  src="src/assets/anyaman.jpg"
+                  alt="Pengrajin Anyaman Bambu"
+                />
+                <p class="text-blue-900 font-bold text-xl">
+                  Pengrajin Anyaman Bambu
+                </p>
+              </div>
+              <p class="mt-12 pb-24">
+                Dengan bantuan dari CROWDUMKM, usaha saya bisa berkembang lebih
+                pesat. Saya bisa mendapatkan dana dengan syarat yang tidak
+                memberatkan dan layanan pelanggan mereka sangat responsif.
+                Terima kasih CROWDUMKM!
+              </p>
+            </div>
+            <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
+              <div class="flex gap-4 mb-6 items-center">
+                <img
+                  class="object-cover rounded-full w-12 h-12"
+                  src="src/assets/anyaman.jpg"
+                  alt="Pengrajin Anyaman Bambu"
+                />
+                <p class="text-blue-900 font-bold text-xl">
+                  Pengrajin Anyaman Bambu
+                </p>
+              </div>
+              <p class="mt-12 pb-24">
+                Dengan bantuan dari CROWDUMKM, usaha saya bisa berkembang lebih
+                pesat. Saya bisa mendapatkan dana dengan syarat yang tidak
+                memberatkan dan layanan pelanggan mereka sangat responsif.
+                Terima kasih CROWDUMKM!
+              </p>
+            </div>
+            <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
+              <div class="flex gap-4 mb-6 items-center">
+                <img
+                  class="object-cover rounded-full w-12 h-12"
+                  src="src/assets/anyaman.jpg"
+                  alt="Pengrajin Anyaman Bambu"
+                />
+                <p class="text-blue-900 font-bold text-xl">
+                  Pengrajin Anyaman Bambu
+                </p>
+              </div>
+              <p class="mt-12 pb-24">
+                Dengan bantuan dari CROWDUMKM, usaha saya bisa berkembang lebih
+                pesat. Saya bisa mendapatkan dana dengan syarat yang tidak
+                memberatkan dan layanan pelanggan mereka sangat responsif.
+                Terima kasih CROWDUMKM!
+              </p>
+            </div>
+            <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
+              <div class="flex gap-4 mb-6 items-center">
+                <img
+                  class="object-cover rounded-full w-12 h-12"
+                  src="src/assets/anyaman.jpg"
+                  alt="Pengrajin Anyaman Bambu"
+                />
+                <p class="text-blue-900 font-bold text-xl">
+                  Pengrajin Anyaman Bambu
+                </p>
+              </div>
+              <p class="mt-12 pb-24">
+                Dengan bantuan dari CROWDUMKM, usaha saya bisa berkembang lebih
+                pesat. Saya bisa mendapatkan dana dengan syarat yang tidak
+                memberatkan dan layanan pelanggan mereka sangat responsif.
+                Terima kasih CROWDUMKM!
+              </p>
+            </div>
+            <!-- Tambahkan lebih banyak testimoni jika diperlukan -->
+          </div>
+
+          <!-- Tombol Panah Kiri -->
+          <button
+            id="leftArrowTestimonials"
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-3 rounded-full shadow-lg -ml-12"
+          >
+            &#10094;
+          </button>
+
+          <!-- Tombol Panah Kanan -->
+          <button
+            id="rightArrowTestimonials"
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-3 rounded-full shadow-lg -mr-12"
+          >
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <!-- JavaScript untuk Menggeser Konten -->
+      <script>
+        const testimonialsContainer = document.getElementById(
+          "testimonialsContainer"
+        );
+        const leftArrowTestimonials = document.getElementById(
+          "leftArrowTestimonials"
+        );
+        const rightArrowTestimonials = document.getElementById(
+          "rightArrowTestimonials"
+        );
+
+        // Jumlah pixel untuk digeser setiap kali tombol diklik
+        const scrollAmountTestimonials = 300;
+
+        // Klik tombol panah kanan
+        rightArrowTestimonials.addEventListener("click", () => {
+          testimonialsContainer.scrollBy({
+            left: scrollAmountTestimonials,
+            behavior: "smooth",
+          });
+        });
+
+        // Klik tombol panah kiri
+        leftArrowTestimonials.addEventListener("click", () => {
+          testimonialsContainer.scrollBy({
+            left: -scrollAmountTestimonials,
+            behavior: "smooth",
+          });
+        });
+      </script>
+
+      <!-- End Kata Mereka -->
 
       <!-- Hubungi kami -->
       <section
