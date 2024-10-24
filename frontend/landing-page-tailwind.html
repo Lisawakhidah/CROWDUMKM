@@ -1,537 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
 
-  <body>
-    <main>
-      <!-- navbar -->
-      <nav class="fixed w-full fixed py-2 bg-blue-800">
-        <div
-          class="text-white mx-auto max-w-screen-xl flex items-center justify-between"
-        >
-          <div class="flex items-center">
-            <img class="w-20" src="src/assets/logo-umkm.png" alt="" />
-            <h1 class="font-bold text-xl">CROWDUMKM</h1>
-          </div>
-          <ul class="flex gap-8 items-center">
-            <li>
-              <a href="landing-page-tailwind.html" class="active">Beranda</a>
-            </li>
-            <!-- <li><a href="#Layanan_kami">Layanan Kami</a></li> -->
-            <li><a href="tentang-kami.html">Tentang Kami</a></li>
-            <!-- <li><a href="#Kontak_kami">Kontak Kami</a></li> -->
-            <li><a href="#Cara_kerja">Cara Kerja</a></li>
-            <li><a href="#Project">Project</a></li>
-            <li>
-              <a href="daftar-sekarang.html">
-                <button class="bg-yellow-500 px-4 py-2 rounded-full">
-                  Daftar Sekarang
-                </button>
-              </a>
-              <a href="login.html">
-                <button class="bg-yellow-500 px-4 py-2 rounded-full">
-                  Login
-                </button>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- end navbar -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-      <!-- hero section -->
-      <section
-        class="w-full min-h-screen bg-blue-900 flex items-center justify-center"
-      >
-        <div
-          class="mx-auto max-w-screen-xl flex items-center justify-center mt-24"
-        >
-          <div class="w-1/2 text-white space-y-8">
-            <h1 class="text-yellow-400 text-4xl leading-relaxed">
-              Dukung UMKM Lokal, Investasikan Masa Depan
-            </h1>
-            <p class="leading-relaxed">
-              CrowdUMKM adalah platform crowdfunding yang bertujuan untuk
-              mendukung Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia.
-              Kami hadir sebagai jembatan bagi UMKM yang ingin berkembang namun
-              terkendala akses permodalan.
-            </p>
-            <div>
-              <a href="daftar-sekarang.html">
-                <button class="bg-yellow-500 px-4 py-2 rounded-full">
-                  Daftar Sekarang
-                </button>
-              </a>
+<body>
+  <main>
+    <!-- navbar -->
+    <nav class="fixed w-full fixed py-2 bg-blue-800 z-50">
+      <div class="text-white mx-auto max-w-screen-xl flex items-center justify-between">
+        <a href="landing-page-tailwind.html" class="flex items-center">
+          <img class="w-20" src="src/assets/logo-umkm.png" alt="Logo UMKM" />
+          <h1 class="font-bold text-xl">CROWDUMKM</h1>
+        </a>
 
-              <a href="proyek-umkm.html">
-                <button class="bg-yellow-500 px-4 py-2 rounded-full">
-                  Proyek UMKM
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="w-1/2">
-            <img
-              src="src/assets/header3.jpg"
-              class="w-2/3 rounded-full mx-auto"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-      <!-- end hero -->
-
-      <!-- proyek section -->
-      <section class="w-full min-h-screen">
-        <h1 class="text-4xl text-blue-900 font-bold text-center my-8">
-          Highlight Proyek Terbaru
-        </h1>
-        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-7 gap-4">
-          <li class="w-full rounded-lg overflow-hidden bg-white shadow-md">
-            <img
-              src="src/assets/umkm5.jpg"
-              class="w-full aspect-video rounded-xl object-cover"
-              alt=""
-            />
-            <div class="mt-4 p-4">
-              <h4 class="text-blue-900 text-xl font-bold">Pengrajin Batik</h4>
-              <p class="my-4">
-                Proyek ini menyoroti kelompok pengrajin lokal yang memproduksi
-                kain batik dan tenun dengan motif tradisional yang memukau
-              </p>
-              <a href="" class="mt-9">Learn More -></a>
-            </div>
+        <ul class="flex gap-8 items-center">
+          <li>
+            <a href="landing-page-tailwind.html" class="active">Beranda</a>
           </li>
-          <li class="w-full rounded-lg overflow-hidden bg-white shadow-md">
-            <img
-              src="src/assets/umkm3.jpg"
-              class="w-full aspect-video rounded-xl object-cover"
-              alt=""
-            />
-            <div class="mt-4 p-4">
-              <h4 class="text-blue-900 text-xl font-bold">Thrift Shop</h4>
-              <p class="my-4">
-                Kelompok usaha ini bergerak di bidang fashion lokal modern dan
-                trendi, menjual pakaian bekas berkualitas dengan harga
-                terjangkau. Thrift shop populer di kalangan anak muda yang
-                peduli lingkungan, menjadikannya peluang bisnis yang menarik.
-              </p>
-              <a href="" class="mt-9">Learn More -></a>
-            </div>
-          </li>
-          <li class="w-full rounded-lg overflow-hidden bg-white shadow-md">
-            <img
-              src="src/assets/umkm2.jpg"
-              class="w-full aspect-video rounded-xl object-cover"
-              alt=""
-            />
-            <div class="mt-4 p-4">
-              <h4 class="text-blue-900 text-xl font-bold">
-                Kuliner Khas Tradisional Nusantara
-              </h4>
-              <p class="my-4">
-                Tidak hanya dikenal dengan kearifan lokal, UMKM kuliner ini juga
-                memperkenalkan ragam makanan tradisional yang lezat dan
-                menggugah selera.
-              </p>
-              <a href="" class="mt-9">Learn More -></a>
-            </div>
-          </li>
-          <li class="w-full rounded-lg overflow-hidden bg-white shadow-md">
-            <img
-              src="src/assets/umkm1.jpg"
-              class="w-full aspect-video rounded-xl object-cover"
-              alt=""
-            />
-            <div class="mt-4 p-4">
-              <h4 class="text-blue-900 text-xl font-bold">Kerajinan Tangan</h4>
-              <p class="my-4">
-                Proyek ini menyoroti kelompok pengrajin lokal yang memproduksi
-                berbagai macam kerajinan tangan tradisional dengan hasil yang
-                memukau
-              </p>
-              <a href="" class="mt-9">Learn More -></a>
-            </div>
+          <!-- <li><a href="#Layanan_kami">Layanan Kami</a></li> -->
+          <li><a href="tentang-kami.html">Tentang Kami</a></li>
+          <!-- <li><a href="#Kontak_kami">Kontak Kami</a></li> -->
+          <li><a href="#Cara_kerja">Cara Kerja</a></li>
+          <li><a href="#Project">Project</a></li>
+          <li>
+            <a href="daftar-sekarang.html">
+              <button class="bg-yellow-500 px-4 py-2 rounded-full">
+                Daftar Sekarang
+              </button>
+            </a>
+            <a href="login.html">
+              <button class="bg-yellow-500 px-4 py-2 rounded-full">
+                Login
+              </button>
+            </a>
           </li>
         </ul>
-      </section>
-      <!-- end proyek -->
+      </div>
+    </nav>
+    <!-- end navbar -->
 
-      <!-- manfaat section -->
-      <section class="w-full min-h-screen">
-        <h1 class="text-4xl text-blue-900 font-bold text-center my-8">
-          Manfaat Bagi Pendana dan Peminjam
-        </h1>
-        <div
-          class="mx-auto max-w-screen-xl flex items-center justify-center gap-3"
-        >
-          <div class="w-full shadow-md bg-white rounded-md px-4 py-8">
-            <p class="text-xl font-bold mb-6 text-center">Pendana</p>
-            <ul class="px-8 space-y-4">
-              <li>Passive Income</li>
-              <li>Bunga Menarik</li>
-              <li>Proses Investasi Mudah</li>
-              <li>Penilaian Kredit Terpercaya</li>
-              <li>Layaanan Responsif</li>
-            </ul>
-            <div class="mt-6 flex justify-evenly w-full items-center gap-3">
-              <a href="daftar-sekarang.html">
-                <button class="bg-yellow-500 px-4 py-2 rounded-full">
-                  Daftar Sekarang
-                </button>
-              </a>
-              <a href="">
-                <button class="bg-yellow-500 px-4 py-2 rounded-full">
-                  Proyek UMKM
-                </button>
-              </a>
-            </div>
-          </div>
+    <!-- hero section -->
+    <section class="w-full min-h-screen bg-blue-900 flex items-center justify-center">
+      <div class="mx-auto max-w-screen-xl flex items-center justify-center mt-24">
+        <div class="w-1/2 text-white space-y-8">
+          <h1 class="text-yellow-400 text-4xl leading-relaxed">
+            Dukung UMKM Lokal, Investasikan Masa Depan
+          </h1>
+          <p class="leading-relaxed">
+            CrowdUMKM adalah platform crowdfunding yang bertujuan untuk
+            mendukung Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia.
+            Kami hadir sebagai jembatan bagi UMKM yang ingin berkembang namun
+            terkendala akses permodalan.
+          </p>
+          <div>
+            <a href="daftar-sekarang.html">
+              <button class="bg-yellow-500 px-4 py-2 rounded-full">
+                Daftar Sekarang
+              </button>
+            </a>
 
-          <div class="w-full shadow-md bg-white rounded-md px-4 py-8">
-            <p class="text-xl font-bold mb-6 text-center">Pendana</p>
-            <ul class="px-8 space-y-4">
-              <li>Persyaratan Lebih Mudah</li>
-              <li>Proses Persetujuan Cepat</li>
-              <li>Bunga Kompetitif</li>
-              <li>Pilihan Tenor Fleksibel</li>
-              <li>Layanan Pelanggan Responsif</li>
-            </ul>
-            <div class="mt-6 flex justify-evenly w-full items-center gap-3">
-              <a href="daftar-sekarang.html">
-                <button class="bg-yellow-500 px-4 py-2 rounded-full">
-                  Daftar Sekarang
-                </button>
-              </a>
-              <a href="">
-                <button class="bg-yellow-500 px-4 py-2 rounded-full">
-                  Proyek UMKM
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end manfaat -->
-      <!-- cara kerja -->
-      <h1 class="text-4xl text-blue-900 font-bold text-center my-8">
-        Cara Kerja CROWDUMKM
-      </h1>
-      <section
-        class="w-full min-h-screen bg-blue-900 flex items-center justify-center flex-col"
-      >
-        <div class="mx-auto max-w-screen-xl flex items-center justify-center">
-          <div class="w-1/2">
-            <img
-              src="src/assets/Header2.webp"
-              class="w-2/3 rounded-full mx-auto"
-              alt=""
-            />
-          </div>
-          <div class="w-1/2 text-white space-y-8">
-            <div class="space-y-4">
-              <h1 class="text-yellow-400 text-4xl leading-relaxed">
-                1. Ajukan Peminjaman
-              </h1>
-              <p class="leading-relaxed">
-                Daftarkan UMKM/Bisnis Anda Untuk MendapatkaN Pinjaman di Website
-              </p>
-            </div>
-            <div class="space-y-4">
-              <h1 class="text-yellow-400 text-4xl leading-relaxed">
-                2. Proses
-              </h1>
-              <p class="leading-relaxed">
-                CROWDUMKM akan memproses pengajuan aplikasi kredit usaha Anda
-                dan menyalurkannya kepada pendana kami.
-              </p>
-            </div>
-            <div class="space-y-4">
-              <h1 class="text-yellow-400 text-4xl leading-relaxed">
-                3. Dapatkan Penawaran
-              </h1>
-              <p class="leading-relaxed">
-                Anda akan menerima penawaran dari pendana kami dalam waktu 48
-                jam
-              </p>
-            </div>
-            <a href="#">
-              <button class="bg-yellow-500 px-4 py-2 rounded-full mt-8">
+            <a href="proyek-umkm.html">
+              <button class="bg-yellow-500 px-4 py-2 rounded-full">
                 Proyek UMKM
               </button>
             </a>
           </div>
         </div>
-      </section>
-      <!-- end cara kerja -->
-
-      <!-- Kata Mereka Section -->
-      <section class="w-full min-h-screen">
-        <h1 class="text-4xl text-blue-900 font-bold text-center my-8">
-          Apa Kata Mereka Tentang CROWDUMKM?
-        </h1>
-        <p class="text-center">
-          Lihat bagaimana pendana dan UMKM merasakan manfaat dari platform kami.
-        </p>
-
-        <!-- Wrapper untuk Tombol Panah dan Konten -->
-        <div class="max-w-screen-xl mx-auto mt-8">
-          <!-- Daftar Testimoni (Wrapper Scrollable) -->
-          <div
-            id="testimonialsContainer"
-            class="flex overflow-x-hidden space-x-8"
-          >
-            <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
-              <div class="flex gap-4 mb-6 items-center">
-                <img
-                  class="object-cover rounded-full w-12 h-12"
-                  src="src/assets/kopi.jpg"
-                  alt="UMKM Kopi Nusantara"
-                />
-                <p class="text-blue-900 font-bold text-xl">
-                  UMKM Kopi Nusantara
-                </p>
-              </div>
-              <p class="mt-12 pb-24">
-                Saya Senang Bisa Meminjam DI CrowdUMKM untuk proses minjamnya
-                cepat dan efisien
-              </p>
-            </div>
-            <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
-              <div class="flex gap-4 mb-6 items-center">
-                <img
-                  class="object-cover rounded-full w-12 h-12"
-                  src="src/assets/client-4.jpg"
-                  alt="David Putra"
-                />
-                <p class="text-blue-900 font-bold text-xl">David Putra</p>
-              </div>
-              <p class="mt-12 pb-24">
-                Saya merasa sangat puas berinvestasi di CROWDUMKM. Prosesnya
-                sangat mudah dan transparan. Imbal hasil yang saya dapatkan
-                stabil setiap bulannya. Sangat cocok untuk yang ingin passive
-                income dengan risiko yang terukur.
-              </p>
-            </div>
-            <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
-              <div class="flex gap-4 mb-6 items-center">
-                <img
-                  class="object-cover rounded-full w-12 h-12"
-                  src="src/assets/anyaman.jpg"
-                  alt="Pengrajin Anyaman Bambu"
-                />
-                <p class="text-blue-900 font-bold text-xl">
-                  Pengrajin Anyaman Bambu
-                </p>
-              </div>
-              <p class="mt-12 pb-24">
-                Dengan bantuan dari CROWDUMKM, usaha saya bisa berkembang lebih
-                pesat. Saya bisa mendapatkan dana dengan syarat yang tidak
-                memberatkan dan layanan pelanggan mereka sangat responsif.
-                Terima kasih CROWDUMKM!
-              </p>
-            </div>
-            <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
-              <div class="flex gap-4 mb-6 items-center">
-                <img
-                  class="object-cover rounded-full w-12 h-12"
-                  src="src/assets/anyaman.jpg"
-                  alt="Pengrajin Anyaman Bambu"
-                />
-                <p class="text-blue-900 font-bold text-xl">
-                  Pengrajin Anyaman Bambu
-                </p>
-              </div>
-              <p class="mt-12 pb-24">
-                Dengan bantuan dari CROWDUMKM, usaha saya bisa berkembang lebih
-                pesat. Saya bisa mendapatkan dana dengan syarat yang tidak
-                memberatkan dan layanan pelanggan mereka sangat responsif.
-                Terima kasih CROWDUMKM!
-              </p>
-            </div>
-            <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
-              <div class="flex gap-4 mb-6 items-center">
-                <img
-                  class="object-cover rounded-full w-12 h-12"
-                  src="src/assets/anyaman.jpg"
-                  alt="Pengrajin Anyaman Bambu"
-                />
-                <p class="text-blue-900 font-bold text-xl">
-                  Pengrajin Anyaman Bambu
-                </p>
-              </div>
-              <p class="mt-12 pb-24">
-                Dengan bantuan dari CROWDUMKM, usaha saya bisa berkembang lebih
-                pesat. Saya bisa mendapatkan dana dengan syarat yang tidak
-                memberatkan dan layanan pelanggan mereka sangat responsif.
-                Terima kasih CROWDUMKM!
-              </p>
-            </div>
-            <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
-              <div class="flex gap-4 mb-6 items-center">
-                <img
-                  class="object-cover rounded-full w-12 h-12"
-                  src="src/assets/anyaman.jpg"
-                  alt="Pengrajin Anyaman Bambu"
-                />
-                <p class="text-blue-900 font-bold text-xl">
-                  Pengrajin Anyaman Bambu
-                </p>
-              </div>
-              <p class="mt-12 pb-24">
-                Dengan bantuan dari CROWDUMKM, usaha saya bisa berkembang lebih
-                pesat. Saya bisa mendapatkan dana dengan syarat yang tidak
-                memberatkan dan layanan pelanggan mereka sangat responsif.
-                Terima kasih CROWDUMKM!
-              </p>
-            </div>
-            <!-- Tambahkan lebih banyak testimoni jika diperlukan -->
-          </div>
-
-          <!-- Tombol Panah Kiri -->
-          <button
-            id="leftArrowTestimonials"
-            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-3 rounded-full shadow-lg -ml-12"
-          >
-            &#10094;
-          </button>
-
-          <!-- Tombol Panah Kanan -->
-          <button
-            id="rightArrowTestimonials"
-            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-3 rounded-full shadow-lg -mr-12"
-          >
-            &#10095;
-          </button>
+        <div class="w-1/2">
+          <img src="src/assets/header3.jpg" class="w-2/3 rounded-full mx-auto" alt="" />
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- end hero -->
 
-      <!-- JavaScript untuk Menggeser Konten -->
-      <script>
-        const testimonialsContainer = document.getElementById(
-          "testimonialsContainer"
-        );
-        const leftArrowTestimonials = document.getElementById(
-          "leftArrowTestimonials"
-        );
-        const rightArrowTestimonials = document.getElementById(
-          "rightArrowTestimonials"
-        );
-
-        // Jumlah pixel untuk digeser setiap kali tombol diklik
-        const scrollAmountTestimonials = 300;
-
-        // Klik tombol panah kanan
-        rightArrowTestimonials.addEventListener("click", () => {
-          testimonialsContainer.scrollBy({
-            left: scrollAmountTestimonials,
-            behavior: "smooth",
-          });
-        });
-
-        // Klik tombol panah kiri
-        leftArrowTestimonials.addEventListener("click", () => {
-          testimonialsContainer.scrollBy({
-            left: -scrollAmountTestimonials,
-            behavior: "smooth",
-          });
-        });
-      </script>
-
-      <!-- End Kata Mereka -->
-
-      <!-- Hubungi kami -->
-      <section
-        class="w-full min-h-screen bg-blue-900 flex items-center justify-center flex-col"
-      >
-        <div class="mx-auto max-w-screen-xl flex items-center justify-center">
-          <div class="w-1/2 text-white">
-            <p class="text-xl font-bold mb-2">Kontak Kami :</p>
-            <p>
-              Kami siap membantu Anda untuk segala pertanyaan terkait pendanaan
-              atau pinjaman di CROWDUMKM. Jangan ragu untuk menghubungi kami
-              melalui:
+    <!-- proyek section -->
+    <section class="w-full min-h-screen">
+      <h1 class="text-4xl text-blue-900 font-bold text-center my-8">
+        Highlight Proyek Terbaru
+      </h1>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-7 gap-4">
+        <li class="w-full rounded-lg overflow-hidden bg-white shadow-md">
+          <img src="src/assets/umkm5.jpg" class="w-full aspect-video rounded-xl object-cover" alt="" />
+          <div class="mt-4 p-4">
+            <h4 class="text-blue-900 text-xl font-bold">Pengrajin Batik</h4>
+            <p class="my-4">
+              Proyek ini menyoroti kelompok pengrajin lokal yang memproduksi
+              kain batik dan tenun dengan motif tradisional yang memukau
             </p>
-            <p class="text-xl font-bold mt-4 mb-2">CROWDUMKM</p>
-            <div class="space-y-2">
-              <p>
-                Alamat : Jl. Raya No. 123, Kecamatan UMKM, Kota Inovasi , 12345
-              </p>
-              <p>No. Handphone : +62897563453697</p>
-              <p>Email: support@crowdumkm.id</p>
-            </div>
+            <a href="" class="mt-9">Learn More -></a>
           </div>
-          <div class="w-1/2 text-white">
-            <div class="w-full rounded-xl bg-blue-600 p-7">
-              <p class="text-xl font-bold mb-2 text-center">Hubungi Kami</p>
-              <div class="my-4">
-                <p>Nama :</p>
-                <input
-                  class="px-4 bg-blue-400 rounded-md outline-none w-full mt-4"
-                  type="text"
-                />
-              </div>
-              <div class="my-4">
-                <p>No. Handphone :</p>
-                <input
-                  class="px-4 bg-blue-400 rounded-md outline-none w-full mt-4"
-                  type="text"
-                />
-              </div>
-              <div class="my-4">
-                <p>Email :</p>
-                <input
-                  class="px-4 bg-blue-400 rounded-md outline-none w-full mt-4"
-                  type="text"
-                />
-              </div>
-              <div class="my-4">
-                <p>Pesan :</p>
-                <textarea
-                  class="px-4 bg-blue-400 rounded-md outline-none w-full mt-4"
-                  type="text"
-                >
-                </textarea>
-              </div>
-              <button class="bg-yellow-500 px-4 py-2 rounded-full mx-auto">
-                Kirim Pesan
-              </button>
-            </div>
+        </li>
+        <li class="w-full rounded-lg overflow-hidden bg-white shadow-md">
+          <img src="src/assets/umkm3.jpg" class="w-full aspect-video rounded-xl object-cover" alt="" />
+          <div class="mt-4 p-4">
+            <h4 class="text-blue-900 text-xl font-bold">Thrift Shop</h4>
+            <p class="my-4">
+              Kelompok usaha ini bergerak di bidang fashion lokal modern dan
+              trendi, menjual pakaian bekas berkualitas dengan harga
+              terjangkau. Thrift shop populer di kalangan anak muda yang
+              peduli lingkungan, menjadikannya peluang bisnis yang menarik.
+            </p>
+            <a href="" class="mt-9">Learn More -></a>
           </div>
-        </div>
-      </section>
-      <!-- End Hubungi kMI -->
-      <!-- footer -->
-      <footer class="footer bg-blue-800 text-white py-8">
-        <div
-          class="section__container footer__container mx-auto max-w-screen-xl"
-        >
-          <ul class="footer__links flex justify-between text-center">
-            <li><a href="landing-page-tailwind.html">Beranda</a></li>
-            <li><a href="tentang-kami.html">Tentang Kami</a></li>
-            <li><a href="#Layanan_Kami">Layanan Kami</a></li>
-            <li class="footer__logo">
-              <a href="#Beranda" class="logo text-yellow-500 font-bold"
-                >CrowdUMKM</a
-              >
-            </li>
-            <li><a href="#">Kontak Kami</a></li>
-            <li><a href="#">Cara Kerja</a></li>
-            <li><a href="#">Project</a></li>
+        </li>
+        <li class="w-full rounded-lg overflow-hidden bg-white shadow-md">
+          <img src="src/assets/umkm2.jpg" class="w-full aspect-video rounded-xl object-cover" alt="" />
+          <div class="mt-4 p-4">
+            <h4 class="text-blue-900 text-xl font-bold">
+              Kuliner Khas Tradisional Nusantara
+            </h4>
+            <p class="my-4">
+              Tidak hanya dikenal dengan kearifan lokal, UMKM kuliner ini juga
+              memperkenalkan ragam makanan tradisional yang lezat dan
+              menggugah selera.
+            </p>
+            <a href="" class="mt-9">Learn More -></a>
+          </div>
+        </li>
+        <li class="w-full rounded-lg overflow-hidden bg-white shadow-md">
+          <img src="src/assets/umkm1.jpg" class="w-full aspect-video rounded-xl object-cover" alt="" />
+          <div class="mt-4 p-4">
+            <h4 class="text-blue-900 text-xl font-bold">Kerajinan Tangan</h4>
+            <p class="my-4">
+              Proyek ini menyoroti kelompok pengrajin lokal yang memproduksi
+              berbagai macam kerajinan tangan tradisional dengan hasil yang
+              memukau
+            </p>
+            <a href="" class="mt-9">Learn More -></a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- end proyek -->
+
+    <!-- manfaat section -->
+    <section class="w-full min-h-screen">
+      <h1 class="text-4xl text-blue-900 font-bold text-center my-8">
+        Manfaat Bagi Pendana dan Peminjam
+      </h1>
+      <div class="mx-auto max-w-screen-xl flex items-center justify-center gap-3">
+        <div class="w-full shadow-md bg-white rounded-md px-4 py-8">
+          <p class="text-xl font-bold mb-6 text-center">Pendana</p>
+          <ul class="px-8 space-y-4">
+            <li>Passive Income</li>
+            <li>Bunga Menarik</li>
+            <li>Proses Investasi Mudah</li>
+            <li>Penilaian Kredit Terpercaya</li>
+            <li>Layaanan Responsif</li>
           </ul>
+          <div class="mt-6 flex justify-evenly w-full items-center gap-3">
+            <a href="daftar-sekarang.html">
+              <button class="bg-yellow-500 px-4 py-2 rounded-full">
+                Daftar Sekarang
+              </button>
+            </a>
+            <a href="">
+              <button class="bg-yellow-500 px-4 py-2 rounded-full">
+                Proyek UMKM
+              </button>
+            </a>
+          </div>
         </div>
-        <!-- Uncomment if you want to add copyright -->
-        <!-- <div class="footer__bar text-center mt-4">
+
+        <div class="w-full shadow-md bg-white rounded-md px-4 py-8">
+          <p class="text-xl font-bold mb-6 text-center">Pendana</p>
+          <ul class="px-8 space-y-4">
+            <li>Persyaratan Lebih Mudah</li>
+            <li>Proses Persetujuan Cepat</li>
+            <li>Bunga Kompetitif</li>
+            <li>Pilihan Tenor Fleksibel</li>
+            <li>Layanan Pelanggan Responsif</li>
+          </ul>
+          <div class="mt-6 flex justify-evenly w-full items-center gap-3">
+            <a href="daftar-sekarang.html">
+              <button class="bg-yellow-500 px-4 py-2 rounded-full">
+                Daftar Sekarang
+              </button>
+            </a>
+            <a href="">
+              <button class="bg-yellow-500 px-4 py-2 rounded-full">
+                Proyek UMKM
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end manfaat -->
+    <!-- cara kerja -->
+    <h1 class="text-4xl text-blue-900 font-bold text-center my-8">
+      Cara Kerja CROWDUMKM
+    </h1>
+    <section class="w-full min-h-screen bg-blue-900 flex items-center justify-center flex-col">
+      <div class="mx-auto max-w-screen-xl flex items-center justify-center">
+        <div class="w-1/2">
+          <img src="src/assets/Header2.webp" class="w-2/3 rounded-full mx-auto" alt="" />
+        </div>
+        <div class="w-1/2 text-white space-y-8">
+          <div class="space-y-4">
+            <h1 class="text-yellow-400 text-4xl leading-relaxed">
+              1. Ajukan Peminjaman
+            </h1>
+            <p class="leading-relaxed">
+              Daftarkan UMKM/Bisnis Anda Untuk MendapatkaN Pinjaman di Website
+            </p>
+          </div>
+          <div class="space-y-4">
+            <h1 class="text-yellow-400 text-4xl leading-relaxed">
+              2. Proses
+            </h1>
+            <p class="leading-relaxed">
+              CROWDUMKM akan memproses pengajuan aplikasi kredit usaha Anda
+              dan menyalurkannya kepada pendana kami.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <h1 class="text-yellow-400 text-4xl leading-relaxed">
+              3. Dapatkan Penawaran
+            </h1>
+            <p class="leading-relaxed">
+              Anda akan menerima penawaran dari pendana kami dalam waktu 48
+              jam
+            </p>
+          </div>
+          <a href="#">
+            <button class="bg-yellow-500 px-4 py-2 rounded-full mt-8">
+              Proyek UMKM
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end cara kerja -->
+
+    <!-- Kata Mereka Section -->
+    <section class="w-full min-h-screen">
+      <h1 class="text-4xl text-blue-900 font-bold text-center my-8">
+        Apa Kata Mereka Tentang CROWDUMKM?
+      </h1>
+      <p class="text-center">
+        Lihat bagaimana pendana dan UMKM merasakan manfaat dari platform kami.
+      </p>
+
+      <!-- Wrapper untuk Tombol Panah dan Konten -->
+      <div class="relative max-w-screen-xl mx-auto mt-8 z-40">
+        <!-- Daftar Testimoni (Wrapper Scrollable) -->
+
+        <div id="testimonialsContainer" class="flex overflow-x-hidden space-x-8">
+          <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
+            <div class="flex gap-4 mb-6 items-center">
+              <img class="object-cover rounded-full w-12 h-12" src="src/assets/kopi.jpg" alt="UMKM Kopi Nusantara" />
+              <p class="text-blue-900 font-bold text-xl">
+                UMKM Kopi Nusantara
+              </p>
+            </div>
+            <p class="mt-12 pb-24">
+              Saya Senang Bisa Meminjam DI CrowdUMKM untuk proses minjamnya
+              cepat dan efisien
+            </p>
+          </div>
+          <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
+            <div class="flex gap-4 mb-6 items-center">
+              <img class="object-cover rounded-full w-12 h-12" src="src/assets/client-4.jpg" alt="David Putra" />
+              <p class="text-blue-900 font-bold text-xl">David Putra</p>
+            </div>
+            <p class="mt-12 pb-24">
+              Saya merasa sangat puas berinvestasi di CROWDUMKM. Prosesnya
+              sangat mudah dan transparan. Imbal hasil yang saya dapatkan
+              stabil setiap bulannya. Sangat cocok untuk yang ingin passive
+              income dengan risiko yang terukur.
+            </p>
+          </div>
+          <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
+            <div class="flex gap-4 mb-6 items-center">
+              <img class="object-cover rounded-full w-12 h-12" src="src/assets/anyaman.jpg"
+                alt="Pengrajin Anyaman Bambu" />
+              <p class="text-blue-900 font-bold text-xl">
+                Pengrajin Anyaman Bambu
+              </p>
+            </div>
+            <p class="mt-12 pb-24">
+              Dengan bantuan dari CROWDUMKM, usaha saya bisa berkembang lebih
+              pesat. Saya bisa mendapatkan dana dengan syarat yang tidak
+              memberatkan dan layanan pelanggan mereka sangat responsif.
+              Terima kasih CROWDUMKM!
+            </p>
+          </div>
+          <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
+            <div class="flex gap-4 mb-6 items-center">
+              <img class="object-cover rounded-full w-12 h-12" src="src/assets/anyaman.jpg"
+                alt="Pengrajin Anyaman Bambu" />
+              <p class="text-blue-900 font-bold text-xl">
+                Pengrajin Anyaman Bambu
+              </p>
+            </div>
+            <p class="mt-12 pb-24">
+              Dengan bantuan dari CROWDUMKM, usaha saya bisa berkembang lebih
+              pesat. Saya bisa mendapatkan dana dengan syarat yang tidak
+              memberatkan dan layanan pelanggan mereka sangat responsif.
+              Terima kasih CROWDUMKM!
+            </p>
+          </div>
+          <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
+            <div class="flex gap-4 mb-6 items-center">
+              <img class="object-cover rounded-full w-12 h-12" src="src/assets/anyaman.jpg"
+                alt="Pengrajin Anyaman Bambu" />
+              <p class="text-blue-900 font-bold text-xl">
+                Pengrajin Anyaman Bambu
+              </p>
+            </div>
+            <p class="mt-12 pb-24">
+              Dengan bantuan dari CROWDUMKM, usaha saya bisa berkembang lebih
+              pesat. Saya bisa mendapatkan dana dengan syarat yang tidak
+              memberatkan dan layanan pelanggan mereka sangat responsif.
+              Terima kasih CROWDUMKM!
+            </p>
+          </div>
+          <div class="bg-slate-300 rounded-xl p-4 min-w-[300px]">
+            <div class="flex gap-4 mb-6 items-center">
+              <img class="object-cover rounded-full w-12 h-12" src="src/assets/anyaman.jpg"
+                alt="Pengrajin Anyaman Bambu" />
+              <p class="text-blue-900 font-bold text-xl">
+                Pengrajin Anyaman Bambu
+              </p>
+            </div>
+            <p class="mt-12 pb-24">
+              Dengan bantuan dari CROWDUMKM, usaha saya bisa berkembang lebih
+              pesat. Saya bisa mendapatkan dana dengan syarat yang tidak
+              memberatkan dan layanan pelanggan mereka sangat responsif.
+              Terima kasih CROWDUMKM!
+            </p>
+          </div>
+          <!-- Tambahkan lebih banyak testimoni jika diperlukan -->
+        </div>
+
+        <!-- Tombol Panah Kiri -->
+        <button id="leftArrowTestimonials"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-3 rounded-full shadow-lg -ml-12">
+          &#10094;
+        </button>
+
+        <!-- Tombol Panah Kanan -->
+        <button id="rightArrowTestimonials"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-3 rounded-full shadow-lg -mr-12">
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <!-- JavaScript untuk Menggeser Konten -->
+    <script>
+      const testimonialsContainer = document.getElementById(
+        "testimonialsContainer"
+      );
+      const leftArrowTestimonials = document.getElementById(
+        "leftArrowTestimonials"
+      );
+      const rightArrowTestimonials = document.getElementById(
+        "rightArrowTestimonials"
+      );
+
+      // Jumlah pixel untuk digeser setiap kali tombol diklik
+      const scrollAmountTestimonials = 300;
+
+      // Klik tombol panah kanan
+      rightArrowTestimonials.addEventListener("click", () => {
+        testimonialsContainer.scrollBy({
+          left: scrollAmountTestimonials,
+          behavior: "smooth",
+        });
+      });
+
+      // Klik tombol panah kiri
+      leftArrowTestimonials.addEventListener("click", () => {
+        testimonialsContainer.scrollBy({
+          left: -scrollAmountTestimonials,
+          behavior: "smooth",
+        });
+      });
+    </script>
+
+    <!-- End Kata Mereka -->
+
+    <!-- Hubungi kami -->
+    <section class="w-full min-h-screen bg-blue-900 flex items-center justify-center flex-col">
+      <div class="mx-auto max-w-screen-xl flex items-center justify-center">
+        <div class="w-1/2 text-white">
+          <p class="text-xl font-bold mb-2">Kontak Kami :</p>
+          <p>
+            Kami siap membantu Anda untuk segala pertanyaan terkait pendanaan
+            atau pinjaman di CROWDUMKM. Jangan ragu untuk menghubungi kami
+            melalui:
+          </p>
+          <p class="text-xl font-bold mt-4 mb-2">CROWDUMKM</p>
+          <div class="space-y-2">
+            <p>
+              Alamat : Jl. Raya No. 123, Kecamatan UMKM, Kota Inovasi , 12345
+            </p>
+            <p>No. Handphone : +62897563453697</p>
+            <p>Email: support@crowdumkm.id</p>
+          </div>
+        </div>
+        <div class="w-1/2 text-white">
+          <div class="w-full rounded-xl bg-blue-600 p-7">
+            <p class="text-xl font-bold mb-2 text-center">Hubungi Kami</p>
+            <div class="my-4">
+              <p>Nama :</p>
+              <input class="px-4 bg-blue-400 rounded-md outline-none w-full mt-4" type="text" />
+            </div>
+            <div class="my-4">
+              <p>No. Handphone :</p>
+              <input class="px-4 bg-blue-400 rounded-md outline-none w-full mt-4" type="text" />
+            </div>
+            <div class="my-4">
+              <p>Email :</p>
+              <input class="px-4 bg-blue-400 rounded-md outline-none w-full mt-4" type="text" />
+            </div>
+            <div class="my-4">
+              <p>Pesan :</p>
+              <textarea class="px-4 bg-blue-400 rounded-md outline-none w-full mt-4" type="text">
+                </textarea>
+            </div>
+            <button class="bg-yellow-500 px-4 py-2 rounded-full mx-auto">
+              Kirim Pesan
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hubungi kMI -->
+    <!-- footer -->
+    <footer class="footer bg-blue-800 text-white py-8">
+      <div class="section__container footer__container mx-auto max-w-screen-xl">
+        <ul class="footer__links flex justify-between text-center">
+          <li><a href="landing-page-tailwind.html">Beranda</a></li>
+          <li><a href="tentang-kami.html">Tentang Kami</a></li>
+          <li><a href="#Layanan_Kami">Layanan Kami</a></li>
+          <li class="footer__logo">
+            <a href="#Beranda" class="logo text-yellow-500 font-bold">CrowdUMKM</a>
+          </li>
+          <li><a href="#">Kontak Kami</a></li>
+          <li><a href="#">Cara Kerja</a></li>
+          <li><a href="#">Project</a></li>
+        </ul>
+      </div>
+      <!-- Uncomment if you want to add copyright -->
+      <!-- <div class="footer__bar text-center mt-4">
     Copyright © 2024 Web Design Mastery. All rights reserved.
   </div> -->
-      </footer>
-      <!-- end footer -->
-    </main>
-    <script src="src/js/scripts.js"></script>
-  </body>
+    </footer>
+    <!-- end footer -->
+  </main>
+  <script src="src/js/scripts.js"></script>
+</body>
+
 </html>
