@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+            <!-- navbar -->
+            <nav class="w-full fixed py-2 bg-blue-800">
+                <div
+                class="text-white mx-auto max-w-screen-xl flex items-center justify-between"
+                >
+                <div class="flex items-center">
+                    <img class="w-20" src="src/assets/logo-umkm.png" alt="" />
+                    <h1 class="font-bold text-xl">CROWDUMKM</h1>
+                </div>
+                <ul class="flex gap-8 items-center">
+                    <li>
+                    <a href="landing-page-tailwind.html" class="active">Beranda</a>
+                    </li>
+                    <!-- <li><a href="#Layanan_kami">Layanan Kami</a></li> -->
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                    <!-- <li><a href="#Kontak_kami">Kontak Kami</a></li> -->
+                    <li><a href="#Cara_kerja">Cara Kerja</a></li>
+                    <li><a href="projects.html">Project</a></li>
+                    <li>
+                    <a href="daftar-sekarang.html"
+                        ><button class="bg-yellow-500 px-4 py-2 rounded-full">
+                        Daftar Sekarang
+                        </button></a
+                    >
+                    <a href="login.html"
+                        ><button class="bg-yellow-500 px-4 py-2 rounded-full">
+                        Login
+                        </button></a
+                    >
+                    </li>
+                </ul>
+                </div>
+            </nav>
+            <!-- end navbar -->
+
+            <!-- Bagian Konten -->
+             <br><br><br><br>
+            <section class="container mx-auto p-6">
+                <div class="mb-6 flex">
+                    <input type="text" id="search" placeholder="Cari berdasarkan judul..." class="flex-1 p-2 border border-gray-300 rounded mr-2">
+                    <select id="category-filter" class="p-2 border border-gray-300 rounded">
+                        <option value="">Semua Kategori</option>
+                        <option value="Kerajinan">Kerajinan</option>
+                        <option value="Makanan">Makanan</option>
+                        <option value="Fashion">Fashion</option>
+                    </select>
+                </div>
+                
+                <div id="card-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Card 1 -->
+                    <div class="card bg-white rounded-lg shadow p-4 mt-4" data-title="Pengrajin Batik" data-category="Kerajinan">
+                        <img src="src/assets/umkm5.jpg" alt="Gambar Card 1" class="w-full h-48 object-cover rounded-t-lg">
+                        <h3 class="text-lg font-semibold mt-2">Pengrajin Batik</h3>
+                        <p class="text-gray-600">Proyek ini menyoroti kelompok pengrajin lokal yang memproduksi kain batik dan tenun dengan motif tradisional yang memukau</p>
+                        <p class="text-gray-800">Dana Terkumpul : <span class="text-green-600 font-bold">Rp 100.000</span></p>
+                        <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Danai</button>
+                        <button class="mt-2 bg-gray-300 text-gray-800 py-2 px-4 rounded hover:bg-gray-400">Selengkapnya</button>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card bg-white rounded-lg shadow p-4 mt-4" data-title="Thrift Shop" data-category="Fashion">
+                        <img src="src/assets/umkm3.jpg" alt="Gambar Card 2" class="w-full h-48 object-cover rounded-t-lg">
+                        <h3 class="text-lg font-semibold mt-2">Thrift Shop</h3>
+                        <p class="text-gray-600">Kelompok usaha ini bergerak di bidang fashion lokal modern dan trendi, menjual pakaian bekas berkualitas dengan harga terjangkau.</p>
+                        <p class="text-gray-800">Dana Terkumpul : <span class="text-green-600 font-bold">Rp 200.000</span></p>
+                        <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Danai</button>
+                        <button class="mt-2 bg-gray-300 text-gray-800 py-2 px-4 rounded hover:bg-gray-400">Selengkapnya</button>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card bg-white rounded-lg shadow p-4 mt-4" data-title="Kuliner Khas Tradisional Nusantara" data-category="Makanan">
+                        <img src="src/assets/umkm2.jpg" alt="Gambar Card 3" class="w-full h-48 object-cover rounded-t-lg">
+                        <h3 class="text-lg font-semibold mt-2">Kuliner Khas Tradisional Nusantara</h3>
+                        <p class="text-gray-600">UMKM kuliner ini juga memperkenalkan ragam makanan tradisional yang lezat dan menggugah selera</p>
+                        <p class="text-gray-800">Dana Terkumpul: <span class="text-green-600 font-bold">Rp 100.000</span></p>
+                        <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Danai</button>
+                        <button class="mt-2 bg-gray-300 text-gray-800 py-2 px-4 rounded hover:bg-gray-400">Selengkapnya</button>
+                    </div>
+                </div>
+
+                <!-- Tombol Tampilkan Lebih Banyak -->
+                <button id="load-more" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Tampilkan Lebih Banyak</button>
+
+                <!-- Card Tambahan (Awalnya Tersembunyi) -->
+                <div id="additional-cards" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                    <div class="card bg-white rounded-lg shadow p-4" data-title="Card 5" data-category="Kerajinan">
+                        <img src="src/assets/umkm1.jpg" alt="Gambar Card 5" class="w-full h-48 object-cover rounded-t-lg">
+                        <h3 class="text-lg font-semibold mt-2">Kerajinan Tangan</h3>
+                        <p class="text-gray-600">Pengrajin lokal yang memproduksi berbagai macam kerajinan tangan tradisional dengan hasil yang memukau</p>
+                        <p class="text-gray-800">Dana Terkumpul: <span class="text-green-600 font-bold">Rp 100.000</span></p>
+                        <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Danai</button>
+                        <button class="mt-2 bg-gray-300 text-gray-800 py-2 px-4 rounded hover:bg-gray-400">Selengkapnya</button>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow p-4" data-title="Keripik Buah" data-category="Makanan">
+                        <img src="src/assets/keripik.png" alt="Gambar Card 6" class="w-full h-48 object-cover rounded-t-lg">
+                        <h3 class="text-lg font-semibold mt-2">Keripik Buah</h3>
+                        <p class="text-gray-600">Usaha mikro aneka macam buah-buahan lokal yang diolah menjadi keripik tanpa mengubah rasa asli dari buah tersebut</p>
+                        <p class="text-gray-800">Dana Terkumpul: <span class="text-green-600 font-bold">Rp 100.000</span></p>
+                        <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Danai</button>
+                        <button class="mt-2 bg-gray-300 text-gray-800 py-2 px-4 rounded hover:bg-gray-400">Selengkapnya</button>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow p-4" data-title="Rotan" data-category="Kerajinan">
+                        <img src="src/assets/rotan.png" alt="Gambar Card 7" class="w-full h-48 object-cover rounded-t-lg">
+                        <h3 class="text-lg font-semibold mt-2">Kerajinan Rotan</h3>
+                        <p class="text-gray-600">Pengrajin lokal yang memproduksi berbagai macam kerajinan rotan dengan hasil yang unik</p>
+                        <p class="text-gray-800">Dana Terkumpul: <span class="text-green-600 font-bold">Rp 100.000</span></p>
+                        <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Danai</button>
+                        <button class="mt-2 bg-gray-300 text-gray-800 py-2 px-4 rounded hover:bg-gray-400">Selengkapnya</button>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                const searchInput = document.getElementById('search');
+                const categoryFilter = document.getElementById('category-filter');
+                const cards = document.querySelectorAll('.card');
+                const loadMoreButton = document.getElementById('load-more');
+                const additionalCards = document.getElementById('additional-cards');
+
+                function filterCards() {
+                    const searchValue = searchInput.value.toLowerCase();
+                    const selectedCategory = categoryFilter.value;
+
+                    let hasVisibleCards = false;
+
+                    cards.forEach(card => {
+                        const title = card.getAttribute('data-title').toLowerCase();
+                        const category = card.getAttribute('data-category');
+
+                        const titleMatches = title.includes(searchValue);
+                        const categoryMatches = selectedCategory === '' || category === selectedCategory;
+
+                        if (titleMatches && categoryMatches) {
+                            card.style.display = '';
+                            hasVisibleCards = true;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+
+                    // Sembunyikan tombol "Tampilkan Lebih Banyak" jika sedang mencari
+                    loadMoreButton.style.display = (searchValue || selectedCategory) ? 'none' : '';
+                }
+
+                searchInput.addEventListener('keyup', filterCards);
+                categoryFilter.addEventListener('change', filterCards);
+
+                loadMoreButton.addEventListener('click', () => {
+                    additionalCards.classList.remove('hidden');
+                    loadMoreButton.style.display = 'none'; // Menghilangkan tombol setelah card ditampilkan
+                });
+            </script>
+
+            <!-- footer -->
+            <footer class="footer bg-blue-800 text-white py-8">
+                <div
+                class="section__container footer__container mx-auto max-w-screen-xl"
+                >
+                    <ul class="footer__links flex justify-between text-center">
+                        <li><a href="landing-page-tailwind.html">Beranda</a></li>
+                        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                        <li><a href="#Layanan_Kami">Layanan Kami</a></li>
+                        <li class="footer__logo">
+                        <a href="#Beranda" class="logo text-yellow-500 font-bold"
+                            >CrowdUMKM</a
+                        >
+                        </li>
+                        <li><a href="#">Kontak Kami</a></li>
+                        <li><a href="#">Cara Kerja</a></li>
+                        <li><a href="#">Project</a></li>
+                    </ul>
+                </div>
+                <!-- Uncomment if you want to add copyright -->
+                <!-- <div class="footer__bar text-center mt-4">
+            Copyright © 2024 Web Design Mastery. All rights reserved.
+                </div> -->
+            </footer>
+            <!-- end footer -->
+        <script src="src/js/scripts.js"></script>
+    </body>
+</html>
